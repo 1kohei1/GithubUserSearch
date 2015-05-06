@@ -14,7 +14,8 @@ class ViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var searchBox: UISearchBar!
     @IBOutlet weak var userName: UILabel!
     
-    var position: Int = 0
+    var position = 0
+    var page = 0
     var users = [User]()
     
     override func viewDidLoad() {
