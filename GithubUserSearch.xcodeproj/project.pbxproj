@@ -13,6 +13,7 @@
 		191958A81AF990D5004B82E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191958A71AF990D5004B82E0 /* Images.xcassets */; };
 		191958AB1AF990D5004B82E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191958A91AF990D5004B82E0 /* LaunchScreen.xib */; };
 		191958B71AF990D6004B82E0 /* GithubUserSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191958B61AF990D6004B82E0 /* GithubUserSearchTests.swift */; };
+		191958C11AF99E9E004B82E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191958C01AF99E9E004B82E0 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		191958B01AF990D6004B82E0 /* GithubUserSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubUserSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		191958B51AF990D6004B82E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		191958B61AF990D6004B82E0 /* GithubUserSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserSearchTests.swift; sourceTree = "<group>"; };
+		191958C01AF99E9E004B82E0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				191958A01AF990D5004B82E0 /* AppDelegate.swift */,
 				191958A21AF990D5004B82E0 /* ViewController.swift */,
+				191958C01AF99E9E004B82E0 /* User.swift */,
 				191958A41AF990D5004B82E0 /* Main.storyboard */,
 				191958A71AF990D5004B82E0 /* Images.xcassets */,
 				191958A91AF990D5004B82E0 /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				191958A31AF990D5004B82E0 /* ViewController.swift in Sources */,
 				191958A11AF990D5004B82E0 /* AppDelegate.swift in Sources */,
+				191958C11AF99E9E004B82E0 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

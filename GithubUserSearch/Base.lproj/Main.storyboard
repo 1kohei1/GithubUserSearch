@@ -70,6 +70,15 @@
                                     <action selector="jumpToUserPage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sml-QG-Cqs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-m9-cPm">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="50" y="379" width="301" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -79,6 +88,7 @@
                                 <exclude reference="laI-bK-6BC"/>
                                 <exclude reference="msB-n6-Sp9"/>
                                 <exclude reference="goe-HA-CYy"/>
+                                <exclude reference="9zv-m9-cPm"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -88,12 +98,14 @@
                                 <include reference="laI-bK-6BC"/>
                                 <include reference="msB-n6-Sp9"/>
                                 <include reference="goe-HA-CYy"/>
+                                <include reference="9zv-m9-cPm"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="searchBox" destination="OzJ-7H-99F" id="Qpj-8W-Z6S"/>
                         <outlet property="userImage" destination="K1y-gq-7zu" id="lHD-4B-2gi"/>
+                        <outlet property="userName" destination="9zv-m9-cPm" id="HBC-ho-8UA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
