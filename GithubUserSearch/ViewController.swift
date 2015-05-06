@@ -8,8 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UISearchBarDelegate {
 
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var searchBox: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +22,24 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        println(self.searchBox.text)
+        self.view.endEditing(true)
+    }
+    
+    @IBAction func showPreUser(sender: AnyObject) {
+        println("show previous user")
+    }
+    
+    @IBAction func showNextUser(sender: AnyObject) {
+        println("show next user")
+    }
+    
+    @IBAction func jumpToUserPage(sender: AnyObject) {
+        println("jump to user page")
+    }
+    
 
 }
 

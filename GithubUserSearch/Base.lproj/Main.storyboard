@@ -41,6 +41,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="328" y="200" width="56" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="showNextUser:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HL4-Jp-i26"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msB-n6-Sp9">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -51,6 +54,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="200" width="56" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="showPreUser:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="THq-Oh-Rhv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goe-HA-CYy">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -60,6 +66,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="424" width="368" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="jumpToUserPage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sml-QG-Cqs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -82,6 +91,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="searchBox" destination="OzJ-7H-99F" id="Qpj-8W-Z6S"/>
+                        <outlet property="userImage" destination="K1y-gq-7zu" id="lHD-4B-2gi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
