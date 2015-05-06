@@ -58,7 +58,6 @@ class GithubUserSearchAPI {
                     imageURLString = user["avatar_url"] as? String
             {
                 // fetch userImage by AsynchronousRequest
-                println(imageURLString)
                 var imageURL = NSURL(string: imageURLString)!
                 var request: NSURLRequest = NSURLRequest(URL: imageURL)
                 var mainQueue = NSOperationQueue.mainQueue()

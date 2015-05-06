@@ -58,18 +58,6 @@
                                     <action selector="showPreUser:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="THq-Oh-Rhv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goe-HA-CYy">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Jump to the userpage">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="424" width="368" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="jumpToUserPage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sml-QG-Cqs"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zv-m9-cPm">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -87,7 +75,6 @@
                                 <exclude reference="K1y-gq-7zu"/>
                                 <exclude reference="laI-bK-6BC"/>
                                 <exclude reference="msB-n6-Sp9"/>
-                                <exclude reference="goe-HA-CYy"/>
                                 <exclude reference="9zv-m9-cPm"/>
                             </mask>
                         </variation>
@@ -97,7 +84,6 @@
                                 <include reference="K1y-gq-7zu"/>
                                 <include reference="laI-bK-6BC"/>
                                 <include reference="msB-n6-Sp9"/>
-                                <include reference="goe-HA-CYy"/>
                                 <include reference="9zv-m9-cPm"/>
                             </mask>
                         </variation>
@@ -112,6 +98,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--User Profile-->
+        <scene sceneID="14B-Lf-l5o">
+            <objects>
+                <viewController id="ace-EA-2eY" customClass="UserProfile" customModule="GithubUserSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m29-y2-s5C"/>
+                        <viewControllerLayoutGuide type="bottom" id="msl-Zs-tZu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DQM-4w-yki">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hF-Be-mhb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Close" id="Pt3-tY-yTd">
+                                        <connections>
+                                            <action selector="close:" destination="ace-EA-2eY" id="3Km-da-kJu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="28" width="400" height="44"/>
+                                </variation>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acZ-gm-nmS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="72" width="400" height="728"/>
+                                </variation>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1hF-Be-mhb"/>
+                                <exclude reference="acZ-gm-nmS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="1hF-Be-mhb"/>
+                                <include reference="acZ-gm-nmS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="acZ-gm-nmS" id="lGM-sL-Hxg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFt-Ur-wef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381.5" y="266.25"/>
         </scene>
     </scenes>
 </document>

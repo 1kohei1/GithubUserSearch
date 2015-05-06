@@ -57,15 +57,9 @@ class ViewController: UIViewController, UISearchBarDelegate, GithubUserSearchAPI
         showUser()
         if position == users.count - 2 {
             api!.searchUsers(self.searchBox.text, page: (position / 5) + 1)
-         
         }
     }
     
-    @IBAction func jumpToUserPage(sender: AnyObject) {
-        println("jump to user page")
-    }
-    
-
     func showUser() {
         if users.count == 0 {
             self.preButton.hidden = true

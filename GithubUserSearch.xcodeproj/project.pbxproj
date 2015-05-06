@@ -417,6 +417,7 @@
 				191958BC1AF990D6004B82E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		191958BD1AF990D6004B82E0 /* Build configuration list for PBXNativeTarget "GithubUserSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +426,7 @@
 				191958BF1AF990D6004B82E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
