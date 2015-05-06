@@ -20,32 +20,4 @@ class User {
         self.userImage = userImage
     }
     
-    static func usersWithJson(results: NSArray) -> [User] {
-        var users = [User]()
-        
-        for user in results {
-            if let  userName = user["login"] as? String,
-                    userProfileURL = user["html_url"] as? String,
-                    imageURLString = user["avatar_url"] as? String
-            {
-                // fetch userImage by AsynchronousRequest
-                var imageURL = NSURL(string: imageURLString)!
-                var request: NSURLRequest = NSURLRequest(URL: imageURL)
-                var mainQueue = NSOperationQueue.mainQueue()
-                
-                NSURLConnection.sendAsynchronousRequest(
-                    request,
-                    queue: mainQueue,
-                    completionHandler: {
-                        (response, data, error) -> Void in
-                        if error != nil {
-                            var userImage = UIImage(data: data)
-                            var user = User(userName: userName, userProfileURL: userProfileURL, userImage: userImage!)
-                            users.append(user)
-                        }
-                })
-            }
-        }
-        return users
-    }
 }

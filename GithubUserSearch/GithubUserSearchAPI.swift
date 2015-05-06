@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 protocol GithubUserSearchAPIProtocol {
-    func didRecieveAPIResults(results: NSArray)
+    func didRecieveUser(user: User)
 }
 
 class GithubUserSearchAPI {
@@ -23,7 +24,7 @@ class GithubUserSearchAPI {
         let qString = q.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.CaseInsensitiveSearch, range: nil)
         
         if let escapedQString = qString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding) {
-            let urlPath = "https://api.github.com/search/users?q=\(escapedQString)&per_page=\(page)"
+            let urlPath = "https://api.github.com/search/users?q=\(escapedQString)&per_page=5&page=\(page)"
             
             let url = NSURL(string: urlPath)
             let session = NSURLSession.sharedSession()
@@ -40,13 +41,41 @@ class GithubUserSearchAPI {
                         if err != nil {
                             println("JSON error: \(err!.localizedDescription)")
                         }
-                        if let results: NSArray = jsonResult["results"] as? NSArray {
-                            self.delegate.didRecieveAPIResults(results)
+                        if let results: NSArray = jsonResult["items"] as? NSArray {
+                            self.pullUsersOutOfJSON(results)
                         }
                     }
                 }
             )
             task.resume()
+        }
+    }
+    
+    func pullUsersOutOfJSON (results: NSArray) {
+        for user in results {
+            if let  userName = user["login"] as? String,
+                    userProfileURL = user["html_url"] as? String,
+                    imageURLString = user["avatar_url"] as? String
+            {
+                // fetch userImage by AsynchronousRequest
+                println(imageURLString)
+                var imageURL = NSURL(string: imageURLString)!
+                var request: NSURLRequest = NSURLRequest(URL: imageURL)
+                var mainQueue = NSOperationQueue.mainQueue()
+                
+                NSURLConnection.sendAsynchronousRequest(
+                    request,
+                    queue: mainQueue,
+                    completionHandler: {
+                        (response, data, error) -> Void in
+                        if error == nil {
+                            var userImage = UIImage(data: data)
+                            var user = User(userName: userName, userProfileURL: userProfileURL, userImage: userImage!)
+                            self.delegate.didRecieveUser(user)
+                        }
+                    }
+                )
+            }
         }
     }
 }

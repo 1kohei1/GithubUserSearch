@@ -103,6 +103,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="laI-bK-6BC" id="kbY-aQ-GwD"/>
+                        <outlet property="preButton" destination="msB-n6-Sp9" id="Ud1-71-0AL"/>
                         <outlet property="searchBox" destination="OzJ-7H-99F" id="Qpj-8W-Z6S"/>
                         <outlet property="userImage" destination="K1y-gq-7zu" id="lHD-4B-2gi"/>
                         <outlet property="userName" destination="9zv-m9-cPm" id="HBC-ho-8UA"/>
