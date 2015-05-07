@@ -39,6 +39,8 @@ class ViewController: UIViewController, UISearchBarDelegate, GithubUserSearchAPI
         self.preButton.hidden = true
         self.nextButton.hidden = true
         
+        users = [User]()
+        
         api!.searchUsers(self.searchBox.text, page: 0)
     }
     
@@ -61,7 +63,7 @@ class ViewController: UIViewController, UISearchBarDelegate, GithubUserSearchAPI
     }
     
     func showUser() {
-        if users.count == 0 {
+        if users.count == 0 || users.count == 1 {
             self.preButton.hidden = true
             self.nextButton.hidden = true
         } else {

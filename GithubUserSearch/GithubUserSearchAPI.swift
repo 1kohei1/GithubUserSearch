@@ -19,7 +19,7 @@ class GithubUserSearchAPI {
     init(delegate: GithubUserSearchAPIProtocol) {
         self.delegate = delegate
     }
-    
+    //AFNetworking
     func searchUsers(q: String, page: Int) {
         let qString = q.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.CaseInsensitiveSearch, range: nil)
         
