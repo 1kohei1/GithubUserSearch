@@ -15,6 +15,7 @@
 		191958B71AF990D6004B82E0 /* GithubUserSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191958B61AF990D6004B82E0 /* GithubUserSearchTests.swift */; };
 		191958C11AF99E9E004B82E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191958C01AF99E9E004B82E0 /* User.swift */; };
 		191958C31AF9A51B004B82E0 /* GithubUserSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191958C21AF9A51B004B82E0 /* GithubUserSearchAPI.swift */; };
+		19FF81671AFAF58B00721F5B /* iOS Simulator Screen Shot May 6, 2015, 21.14.44.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FF81661AFAF58B00721F5B /* iOS Simulator Screen Shot May 6, 2015, 21.14.44.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		191958B61AF990D6004B82E0 /* GithubUserSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserSearchTests.swift; sourceTree = "<group>"; };
 		191958C01AF99E9E004B82E0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		191958C21AF9A51B004B82E0 /* GithubUserSearchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUserSearchAPI.swift; sourceTree = "<group>"; };
+		19FF81661AFAF58B00721F5B /* iOS Simulator Screen Shot May 6, 2015, 21.14.44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iOS Simulator Screen Shot May 6, 2015, 21.14.44.png"; path = "../../../iOS Simulator Screen Shot May 6, 2015, 21.14.44.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				191958A01AF990D5004B82E0 /* AppDelegate.swift */,
 				191958A21AF990D5004B82E0 /* ViewController.swift */,
 				191958C21AF9A51B004B82E0 /* GithubUserSearchAPI.swift */,
+				19FF81661AFAF58B00721F5B /* iOS Simulator Screen Shot May 6, 2015, 21.14.44.png */,
 				191958C01AF99E9E004B82E0 /* User.swift */,
 				191958A41AF990D5004B82E0 /* Main.storyboard */,
 				191958A71AF990D5004B82E0 /* Images.xcassets */,
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19FF81671AFAF58B00721F5B /* iOS Simulator Screen Shot May 6, 2015, 21.14.44.png in Resources */,
 				191958A61AF990D5004B82E0 /* Main.storyboard in Resources */,
 				191958AB1AF990D5004B82E0 /* LaunchScreen.xib in Resources */,
 				191958A81AF990D5004B82E0 /* Images.xcassets in Resources */,
