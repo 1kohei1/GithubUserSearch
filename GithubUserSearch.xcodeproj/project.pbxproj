@@ -15,7 +15,7 @@
 		191958B71AF990D6004B82E0 /* GithubUserSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191958B61AF990D6004B82E0 /* GithubUserSearchTests.swift */; };
 		191958C11AF99E9E004B82E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191958C01AF99E9E004B82E0 /* User.swift */; };
 		191958C31AF9A51B004B82E0 /* GithubUserSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191958C21AF9A51B004B82E0 /* GithubUserSearchAPI.swift */; };
-		19FF81691AFAF63C00721F5B /* iOS Simulator Screen Shot May 6, 2015, 21.23.58.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FF81681AFAF63C00721F5B /* iOS Simulator Screen Shot May 6, 2015, 21.23.58.png */; };
+		19FF81691AFAF63C00721F5B /* screenshot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 19FF81681AFAF63C00721F5B /* screenshot1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 		191958B61AF990D6004B82E0 /* GithubUserSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserSearchTests.swift; sourceTree = "<group>"; };
 		191958C01AF99E9E004B82E0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		191958C21AF9A51B004B82E0 /* GithubUserSearchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUserSearchAPI.swift; sourceTree = "<group>"; };
-		19FF81681AFAF63C00721F5B /* iOS Simulator Screen Shot May 6, 2015, 21.23.58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen Shot May 6, 2015, 21.23.58.png"; sourceTree = "<group>"; };
+		19FF81681AFAF63C00721F5B /* screenshot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 		191958921AF990D4004B82E0 = {
 			isa = PBXGroup;
 			children = (
-				19FF81681AFAF63C00721F5B /* iOS Simulator Screen Shot May 6, 2015, 21.23.58.png */,
+				19FF81681AFAF63C00721F5B /* screenshot1.png */,
 				1919589D1AF990D5004B82E0 /* GithubUserSearch */,
 				191958B31AF990D6004B82E0 /* GithubUserSearchTests */,
 				1919589C1AF990D5004B82E0 /* Products */,
@@ -202,7 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				191958A61AF990D5004B82E0 /* Main.storyboard in Resources */,
-				19FF81691AFAF63C00721F5B /* iOS Simulator Screen Shot May 6, 2015, 21.23.58.png in Resources */,
+				19FF81691AFAF63C00721F5B /* screenshot1.png in Resources */,
 				191958AB1AF990D5004B82E0 /* LaunchScreen.xib in Resources */,
 				191958A81AF990D5004B82E0 /* Images.xcassets in Resources */,
 			);
